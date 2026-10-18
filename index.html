@@ -1,0 +1,277 @@
+<!doctype html>
+<!-- index.html — Single-page landing for Beto Oliveira Personal Trainer.
+     Static, no JS. Styles in css/style.css; photos go in assets/img/ (see README.md). -->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beto Oliveira | Personal Trainer — Zona Sul e Niterói</title>
+  <meta name="description" content="Avaliação física, treinamento personalizado e acompanhamento profissional presencial, em condomínio, academia ou online. Zona Sul do Rio e Niterói.">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M8 14h3"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-chevron-l" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+  <symbol id="i-chevron-r" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><path d="M5 21V4h9v17M14 9h5v12M3 21h18M8 8h3M8 12h3M8 16h3"/></symbol>
+  <symbol id="i-dumbbell" viewBox="0 0 24 24"><path d="M6 7v10M3 9v6M18 7v10M21 9v6M6 12h12"/></symbol>
+  <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 21h8M12 16v5"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4.5 4.5 0 018-2.7A4.5 4.5 0 0120 9c0 6-8 11-8 11z"/></symbol>
+  <symbol id="i-bars" viewBox="0 0 24 24"><path d="M5 20v-6M11 20V9M17 20V4M3 20h18"/></symbol>
+  <symbol id="i-run" viewBox="0 0 24 24"><circle cx="14" cy="4.5" r="2"/><path d="M8 21l3-6 3 2 1 4M11 15l-1-5 4-1 2 4 3 1M10 10L7 12"/></symbol>
+  <symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="2"/><path d="M12 7v7M5 10l7-1 7 1M9 21l3-7 3 7"/></symbol>
+  <symbol id="i-lotus" viewBox="0 0 24 24"><path d="M12 19c-4 0-7-3-8-7 3 0 5 1 6 3M12 19c4 0 7-3 8-7-3 0-5 1-6 3M12 19c-2-2-3-5 0-12 3 7 2 10 0 12z"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L8 21l4-2 4 2-1-7.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9a4 4 0 018 0M12 9l2-2"/></symbol>
+  <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h6"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+  <symbol id="i-repeat" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0114-5l2 2M20 4v5h-5M20 12a8 8 0 01-14 5l-2-2M4 20v-5h5"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5 10v11h14V10M10 21v-6h4v6"/></symbol>
+  <symbol id="i-shoe" viewBox="0 0 24 24"><path d="M3 16v-3l5-2 2 2 4 1 7 3v2H3zM8 11l1-4"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M4 20l1.3-4.2A8 8 0 118.3 19L4 20z"/><path d="M9 8.500c0 3.500 3 6.500 6.500 6.500l.8-1.500-2-1-.8.800c-1-.5-1.800-1.300-2.300-2.300l.8-.8-1-2z"/></symbol>
+</svg>
+
+<!-- ===== Header ===== -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="#inicio" class="logo" aria-label="Beto Oliveira Personal Trainer">
+      <img src="assets/img/logo.png" alt="Beto Oliveira Personal Trainer" class="logo__img" width="800" height="213">
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">
+    <label for="menu-toggle" class="menu-button" aria-hidden="true"><span></span><span></span><span></span></label>
+
+    <nav class="nav" aria-label="Principal">
+      <ul>
+        <li><a href="#inicio" class="active">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#programas">Programas</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <a href="#contato" class="btn btn--sm"><svg class="icon"><use href="#i-calendar"/></svg> Agendar avaliação <svg class="icon"><use href="#i-arrow"/></svg></a>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== Hero ===== -->
+<section id="inicio" class="hero">
+  <div class="hero__bg photo" role="img" aria-label="Beto Oliveira com vista para o Rio de Janeiro"></div>
+  <div class="container hero__content">
+    <p class="eyebrow">Saúde · Performance · Longevidade</p>
+    <h1>Seu treino precisa se adaptar a você <span class="hl">não o contrário.</span></h1>
+    <p class="hero__lead">Avaliação, treinamento personalizado e acompanhamento profissional para você viver com mais saúde, disposição e resultado.</p>
+
+    <ul class="hero__modes">
+      <li><svg class="icon"><use href="#i-pin"/></svg><strong>Presencial</strong><span>Zona Sul e Niterói</span></li>
+      <li><svg class="icon"><use href="#i-building"/></svg><strong>Condomínio</strong><span>No seu prédio</span></li>
+      <li><svg class="icon"><use href="#i-dumbbell"/></svg><strong>Academia</strong><span>Proquality e outras</span></li>
+      <li><svg class="icon"><use href="#i-monitor"/></svg><strong>Online</strong><span>MFITPERSONAL</span></li>
+      <li><svg class="icon"><use href="#i-repeat"/></svg><strong>Híbrido</strong><span>Flexibilidade</span></li>
+    </ul>
+
+    <a href="#contato" class="btn"><svg class="icon"><use href="#i-calendar"/></svg> Quero fazer minha avaliação <svg class="icon"><use href="#i-arrow"/></svg></a>
+    <p class="hero__cref">Professor de Educação Física | CREF 054492-G/RJ</p>
+  </div>
+  <p class="hero__tag" aria-hidden="true">Treino para a vida real!</p>
+</section>
+
+<!-- ===== Focus strip ===== -->
+<section class="focus" aria-label="Focos de treino">
+  <div class="container">
+    <ul>
+      <li><svg class="icon"><use href="#i-heart"/></svg><div><strong>Emagrecimento</strong><span>com saúde</span></div></li>
+      <li><svg class="icon"><use href="#i-bars"/></svg><div><strong>Força</strong><span>e hipertrofia</span></div></li>
+      <li><svg class="icon"><use href="#i-run"/></svg><div><strong>Condicionamento</strong><span>cardiovascular</span></div></li>
+      <li><svg class="icon"><use href="#i-person"/></svg><div><strong>Mobilidade</strong><span>e qualidade de vida</span></div></li>
+      <li><svg class="icon"><use href="#i-lotus"/></svg><div><strong>Longevidade</strong><span>30+, 40+, 50+ e 60+</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== About ===== -->
+<section id="sobre" class="about">
+  <div class="about__grid">
+    <div class="about__photo photo" role="img" aria-label="Retrato de Beto Oliveira"></div>
+    <div class="about__text">
+      <p class="eyebrow">Sobre mim</p>
+      <h2>Beto Oliveira<br>Personal Trainer</h2>
+      <p>Professor de Educação Física desde 2007, especializado em treinamento personalizado, avaliação física, treinamento funcional, força, corrida e longevidade. Atendo adultos 30+, 40+, 50+ e 60+, em academias, condomínios, domicílio e online.</p>
+      <a href="#sobre" class="btn btn--sm">Conheça minha história <svg class="icon"><use href="#i-arrow"/></svg></a>
+    </div>
+    <ul class="about__list">
+      <li><svg class="icon"><use href="#i-award"/></svg>Formação e certificações</li>
+      <li><svg class="icon"><use href="#i-clock"/></svg>Experiência desde 2007</li>
+      <li><svg class="icon"><use href="#i-scale"/></svg>Avaliação física e bioimpedância</li>
+      <li><svg class="icon"><use href="#i-clipboard"/></svg>Programas personalizados</li>
+      <li><svg class="icon"><use href="#i-pin"/></svg>Atendimento em <strong>&nbsp;Zona Sul e Niterói</strong></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== Method ===== -->
+<section id="metodo" class="method">
+  <div class="container">
+    <span class="eyebrow">Meu método</span>
+    <h2 class="section-title">Da avaliação à <span class="hl">evolução</span></h2>
+    <p class="method__sub">Um processo completo, individualizado e baseado em evidências.</p>
+
+    <ol class="steps">
+      <li class="step"><span class="step__num">01</span><svg class="icon"><use href="#i-clipboard"/></svg><h3>AVALIAR</h3><p>Bioimpedância, medidas, histórico e testes funcionais.</p></li>
+      <li class="sep" aria-hidden="true"><svg class="icon"><use href="#i-chevron-r"/></svg></li>
+      <li class="step"><span class="step__num">02</span><svg class="icon"><use href="#i-target"/></svg><h3>PLANEJAR</h3><p>Prescrição individualizada com foco nos seus objetivos.</p></li>
+      <li class="sep" aria-hidden="true"><svg class="icon"><use href="#i-chevron-r"/></svg></li>
+      <li class="step"><span class="step__num">03</span><svg class="icon"><use href="#i-dumbbell"/></svg><h3>TREINAR</h3><p>Sessões presenciais, online, condomínio ou academia.</p></li>
+      <li class="sep" aria-hidden="true"><svg class="icon"><use href="#i-chevron-r"/></svg></li>
+      <li class="step"><span class="step__num">04</span><svg class="icon"><use href="#i-bars"/></svg><h3>ACOMPANHAR</h3><p>App MFITPERSONAL, evolução e ajustes constantes.</p></li>
+      <li class="sep" aria-hidden="true"><svg class="icon"><use href="#i-chevron-r"/></svg></li>
+      <li class="step"><span class="step__num">05</span><svg class="icon"><use href="#i-repeat"/></svg><h3>REAVALIAR</h3><p>Comparação de resultados e novos desafios.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== Audience ===== -->
+<section id="publico" class="audience">
+  <div class="container">
+    <div class="section-head">
+      <h2>Para quem é o meu treinamento?</h2>
+      <a href="#programas" class="link-more">Ver todos os programas <svg class="icon"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="cards-6">
+      <article class="audience-card"><div class="photo" role="img" aria-label="Adultos 30+"></div><div><strong>Adultos 30+</strong><span>Saúde, disposição e qualidade de vida</span></div></article>
+      <article class="audience-card"><div class="photo" role="img" aria-label="Adultos 40+"></div><div><strong>Adultos 40+</strong><span>Força, energia e prevenção</span></div></article>
+      <article class="audience-card"><div class="photo" role="img" aria-label="50+ e 60+"></div><div><strong>50+ e 60+</strong><span>Autonomia, mobilidade e longevidade</span></div></article>
+      <article class="audience-card"><div class="photo" role="img" aria-label="Mulheres"></div><div><strong>Mulheres</strong><span>Emagrecimento, força, menopausa e bem-estar</span></div></article>
+      <article class="audience-card"><div class="photo" role="img" aria-label="Condomínios"></div><div><strong>Condomínios</strong><span>Avaliações e treinos no seu prédio</span></div></article>
+      <article class="audience-card"><div class="photo" role="img" aria-label="Online"></div><div><strong>Online</strong><span>Treine de onde estiver com acompanhamento</span></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Services ===== -->
+<section id="servicos" class="services">
+  <div class="container">
+    <div class="services__inner">
+      <span class="eyebrow">Meus serviços</span>
+      <h2 class="section-title">Treinamento <span class="hl">personalizado</span></h2>
+      <div class="cards-services">
+        <article class="service-card"><svg class="icon"><use href="#i-dumbbell"/></svg><strong>Aula personal</strong><span>Presencial, dupla ou small group.</span></article>
+        <article class="service-card"><svg class="icon"><use href="#i-home"/></svg><strong>Condomínio</strong><span>Para moradores e síndicos.</span></article>
+        <article class="service-card"><svg class="icon"><use href="#i-shoe"/></svg><strong>Treino em academia</strong><span>Proquality, Leblon e outras.</span></article>
+        <article class="service-card"><svg class="icon"><use href="#i-monitor"/></svg><strong>Treino online</strong><span>MFITPERSONAL.</span></article>
+        <article class="service-card"><svg class="icon"><use href="#i-clipboard"/></svg><strong>Avaliação física</strong><span>Bioimpedância, medidas e testes.</span></article>
+        <article class="service-card"><svg class="icon"><use href="#i-run"/></svg><strong>Assessoria de corrida</strong><span>Da caminhada ao seu próximo desafio.</span></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Programs ===== -->
+<section id="programas" class="programs">
+  <div class="container">
+    <div class="section-head">
+      <h2>Programas em destaque</h2>
+      <a href="#programas" class="link-more">Ver todos os programas <svg class="icon"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="cards-4">
+      <article class="program-card"><div class="photo" role="img" aria-label="Além do abdômen"></div><div class="program-card__body"><h3>Além do abdômen</h3><p>Desafio 21 dias para mais força e definição.</p><a href="#contato" class="btn btn--sm">Saiba mais</a></div></article>
+      <article class="program-card"><div class="photo" role="img" aria-label="Treino em casa"></div><div class="program-card__body"><h3>Treino em casa</h3><p>4 treinos semanais, de 20 a 30 minutos.</p><a href="#contato" class="btn btn--sm">Saiba mais</a></div></article>
+      <article class="program-card"><div class="photo" role="img" aria-label="Movimente-se 50+"></div><div class="program-card__body"><h3>Movimente-se 50+</h3><p>Mais autonomia e qualidade de vida.</p><a href="#contato" class="btn btn--sm">Saiba mais</a></div></article>
+      <article class="program-card"><div class="photo" role="img" aria-label="Treinamento cardiovascular"></div><div class="program-card__body"><h3>Treinamento cardiovascular</h3><p>Da base ao seu próximo desafio.</p><a href="#contato" class="btn btn--sm">Saiba mais</a></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Testimonials ===== -->
+<section id="depoimentos" class="testimonials">
+  <div class="container testimonials__grid">
+    <div>
+      <h2>Depoimentos</h2>
+      <div class="quotes" tabindex="0" aria-label="Depoimentos de alunos">
+        <blockquote class="quote">O treino com o Beto mudou minha rotina. Mais disposição, menos dores e muito mais confiança no meu corpo. Profissional incrível!<cite>— Aluna, 52 anos</cite></blockquote>
+        <blockquote class="quote">Voltei a treinar com segurança e sem medo de lesão. A avaliação inicial fez toda a diferença no planejamento.<cite>— Aluno, 47 anos</cite></blockquote>
+        <blockquote class="quote">Treinar no condomínio facilitou muito minha rotina. Atenção total em cada sessão.<cite>— Aluna, 38 anos</cite></blockquote>
+      </div>
+    </div>
+    <div class="google">
+      <span class="google__g" aria-hidden="true">G</span>
+      <div>
+        <small>Avaliações no Google</small>
+        <strong>5,0</strong> <span class="stars" aria-label="5 estrelas">★★★★★</span>
+        <small>Veja o que meus alunos dizem</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Blog ===== -->
+<section id="blog" class="blog">
+  <div class="container blog__grid">
+    <div class="blog__intro">
+      <span class="eyebrow">Blog</span>
+      <h2 class="section-title">Conteúdo para sua saúde</h2>
+      <p>Dicas, orientações e informações baseadas em ciência para você treinar melhor e viver com mais saúde.</p>
+      <a href="#blog" class="btn btn--sm">Ver todos os artigos <svg class="icon"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="cards-3">
+      <article class="post-card"><div class="photo" role="img" aria-label="Avaliação física"></div><div><h3>Avaliação física: por que ela é essencial?</h3><time datetime="2026-11-18">18 de novembro, 2026</time></div></article>
+      <article class="post-card"><div class="photo" role="img" aria-label="Neurociência do exercício"></div><div><h3>Movimento e neurociência do exercício</h3><time datetime="2026-11-17">17 de novembro, 2026</time></div></article>
+      <article class="post-card"><div class="photo" role="img" aria-label="Treinos domiciliares"></div><div><h3>Treinos domiciliares: resultados de verdade</h3><time datetime="2026-11-02">2 de novembro, 2026</time></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section id="contato" class="cta">
+  <div class="container cta__inner">
+    <div>
+      <h2>Vamos treinar juntos?</h2>
+      <p>Dê o primeiro passo para uma vida mais saudável e ativa.</p>
+    </div>
+    <a href="https://wa.me/5521999999999" class="btn btn--dark" target="_blank" rel="noopener"><svg class="icon"><use href="#i-calendar"/></svg> Agendar minha avaliação <svg class="icon"><use href="#i-arrow"/></svg></a>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#inicio" class="logo" aria-label="Voltar ao topo">
+      <img src="assets/img/logo.png" alt="Beto Oliveira Personal Trainer" class="logo__img" width="800" height="213">
+    </a>
+    <nav aria-label="Rodapé">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#programas">Programas</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="social">
+      <a href="https://instagram.com/" aria-label="Instagram" target="_blank" rel="noopener"><svg class="icon"><use href="#i-instagram"/></svg></a>
+      <a href="https://youtube.com/" aria-label="YouTube" target="_blank" rel="noopener"><svg class="icon"><use href="#i-youtube"/></svg></a>
+      <a href="https://wa.me/5521999999999" aria-label="WhatsApp" target="_blank" rel="noopener"><svg class="icon"><use href="#i-whatsapp"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
