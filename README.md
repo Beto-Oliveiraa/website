@@ -21,7 +21,7 @@ Os cards (público, programas, blog) usam a variável `--img` — exemplo:
 `<div class="photo" style="--img:url(assets/img/mulheres.jpg)">`.
 
 ## Pendências
-- Trocar o número do WhatsApp (`5521999999999`) e links de Instagram/YouTube.
+- Trocar links de Instagram/YouTube.
 - Datas e textos do blog são exemplos.
 
 ## GitHub Pages
