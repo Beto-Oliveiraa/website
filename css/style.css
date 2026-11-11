@@ -266,3 +266,139 @@ summary:hover{
   html { scroll-behavior: auto; }
   .btn { transition: none; }
 }
+
+
+
+/* =========================================
+   NEWSLETTER - BETO OLIVEIRA PERSONAL TRAINER
+========================================= */
+
+.newsletter {
+  background: #111111;
+  color: #ffffff;
+  padding: 80px 24px;
+  border-top: 1px solid rgba(255, 215, 0, 0.25);
+}
+
+.newsletter__content {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter__tag {
+  display: inline-block;
+  color: #FFD700;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.newsletter h2 {
+  color: #FFD700;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.newsletter__content > p {
+  color: #dddddd;
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0 auto 32px;
+}
+
+.newsletter__form {
+  background: #ffffff;
+  color: #222222;
+  padding: 32px;
+  border-radius: 12px;
+  text-align: left;
+  display: grid;
+  gap: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.newsletter__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.newsletter__field label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.newsletter__field input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #cccccc;
+  border-radius: 7px;
+  font-size: 15px;
+  background: #ffffff;
+  color: #222222;
+}
+
+.newsletter__field input:focus {
+  outline: 2px solid #FFD700;
+  border-color: #FFD700;
+}
+
+.newsletter__consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #444444;
+}
+
+.newsletter__consent input {
+  margin-top: 3px;
+  accent-color: #111111;
+}
+
+.newsletter__button {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 7px;
+  background: #FFD700;
+  color: #111111;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.3s ease,
+              transform 0.3s ease;
+}
+
+.newsletter__button:hover {
+  background: #e6c200;
+  transform: translateY(-2px);
+}
+
+#newsletter-feedback {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 560px) {
+  .newsletter {
+    padding: 55px 18px;
+  }
+
+  .newsletter__form {
+    padding: 22px 18px;
+  }
+
+  .newsletter__content > p {
+    font-size: 14px;
+  }
+}
