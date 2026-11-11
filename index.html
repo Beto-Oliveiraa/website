@@ -255,6 +255,79 @@
     <a href="#inicio" class="logo" aria-label="Voltar ao topo">
       <img src="assets/img/logo.png" alt="Beto Oliveira Personal Trainer" class="logo__img" width="800" height="213">
     </a>
+       
+<!-- ===== NEWSLETTER ===== -->
+<section id="newsletter" class="newsletter">
+  <div class="container">
+    <div class="newsletter__content">
+
+      <span class="newsletter__tag">
+        BETO OLIVEIRA PERSONAL TRAINER
+      </span>
+
+      <h2>Conhecimento que movimenta.</h2>
+
+      <p>
+        Receba conteúdos exclusivos sobre saúde,
+        treinamento, qualidade de vida e novidades
+        dos nossos programas.
+      </p>
+
+      <form id="newsletter-form" class="newsletter__form">
+
+        <div class="newsletter__field">
+          <label for="newsletter-nome">Seu nome</label>
+          <input
+            type="text"
+            id="newsletter-nome"
+            name="nome"
+            placeholder="Digite seu nome"
+            required
+          >
+        </div>
+
+        <div class="newsletter__field">
+          <label for="newsletter-email">Seu e-mail</label>
+          <input
+            type="email"
+            id="newsletter-email"
+            name="email"
+            placeholder="Digite seu melhor e-mail"
+            required
+          >
+        </div>
+
+        <input
+          type="hidden"
+          name="origem"
+          value="Site - Newsletter"
+        >
+
+        <label class="newsletter__consent">
+          <input
+            type="checkbox"
+            name="consentimento"
+            value="sim"
+            required
+          >
+          <span>
+            Aceito receber conteúdos e novidades
+            por e-mail.
+          </span>
+        </label>
+
+        <button type="submit" class="newsletter__button">
+          QUERO RECEBER
+        </button>
+
+        <p id="newsletter-feedback" aria-live="polite"></p>
+
+      </form>
+    </div>
+  </div>
+</section>
+<!-- ===== FIM NEWSLETTER ===== -->
+
     <nav aria-label="Rodapé">
       <ul>
         <li><a href="#inicio">Início</a></li>
