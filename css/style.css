@@ -233,7 +233,7 @@ summary:hover{
   .cards-6, .cards-services { grid-template-columns: repeat(3, 1fr); }
   .cards-4 { grid-template-columns: repeat(2, 1fr); }
   .about__grid { grid-template-columns: 1fr 1fr; }
-  .about__list { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; }
+  .about__list { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; }
   .service-card { min-height: 0; padding: 1rem .8rem; }
   .blog__grid, .testimonials__grid { grid-template-columns: 1fr; }
 }
@@ -254,6 +254,7 @@ summary:hover{
 
 @media (max-width: 560px) {
   .about__grid { grid-template-columns: 1fr; }
+  .about__list { display: grid; grid-template-columns: max-content; justify-content: center; }
   .cards-6, .cards-4 { grid-template-columns: repeat(2, 1fr); }
   .cards-3, .cards-services { grid-template-columns: 1fr; }
   .focus ul { justify-content: flex-start; }
