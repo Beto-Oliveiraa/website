@@ -215,6 +215,7 @@ summary:hover{
 /* ===== CTA ===== */
 .cta { background: var(--yellow); }
 .cta__inner { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.6rem 0; flex-wrap: wrap; }
+.cta__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: .8rem; }
 .cta h2 { font-size: 1.1rem; font-weight: 800; text-transform: uppercase; }
 .cta p { font-size: .8rem; }
 
@@ -259,6 +260,8 @@ summary:hover{
   .cards-3, .cards-services { grid-template-columns: 1fr; }
   .focus ul { justify-content: flex-start; }
   .cta__inner, .footer__inner { flex-direction: column; text-align: center; }
+  .cta__actions { flex-direction: column; align-self: stretch; }
+  .cta__actions .btn { justify-content: center; }
 }
 
 @media (prefers-reduced-motion: reduce) {
